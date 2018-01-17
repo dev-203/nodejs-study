@@ -8,13 +8,12 @@
         
         <script>
             
-            var a= prompt('가로의 길이를 입력해주세요.');
-            var b= prompt('세로의 길이를 입력해주세요.');
-            if(a,b <=1000){
-                function square(){
-                    return alert(a*b);
-                }
-                square();
+            var a= prompt('밑변의 길이를 입력해주세요.');
+            var b= prompt('높이를  입력해주세요.');
+            if(a,b > 0 && a,b <=1000){
+                var x = a*b/2
+                var z = x.toFixed(2);
+                document.write(z);
             } else {
                 alert('1000 이하의 자연수를 입력해주세요.');
             }
