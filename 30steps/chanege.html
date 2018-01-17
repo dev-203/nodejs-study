@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var a= prompt('세자리의 자연수를 입력해주세요.');
+            a = Math.floor(a/10)*10;
+            if(a >= 100 && a<1000){
+                b = 1000 - a;
+                var x = b/100;
+                var c = b%100;
+                var y = c/50;
+                var d = c%50;
+                var z = d/10;
+
+                q= Math.floor(x);
+                w= Math.floor(y);
+                e= Math.floor(z);
+                
+                document.write(q+' '+w+' '+e);
+
+            } else {
+                alert('1000 이하의 자연수를 입력해주세요.');
+            }
+            
+           
+
+        </script>
+
+         
+
+    </body>
+</html>

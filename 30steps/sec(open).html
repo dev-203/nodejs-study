@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var a= prompt('초를 입력해주세요.');
+            
+            if(a<=10000000){
+               var b = a/7200;
+               var x = a%7200;
+               var c = x/3600;
+               var y = x%3600;
+               var d = y/60;
+               
+                
+               var D = Math.floor(b);
+               var H = Math.floor(c);
+               var M = Math.floor(d);
+               var S = y%60;
+                
+                document.write(D+'days '+H+'hours '+M+'minutes '+S+'seconds')
+
+            } else {
+                alert('10000000 이하의 정수를 입력해주세요.');
+            }
+            
+           
+
+        </script>
+
+         
+
+    </body>
+</html>
