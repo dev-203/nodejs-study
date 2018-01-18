@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var a= prompt('시간을 입력해주세요.');
+            var b= prompt('분을 입력해주세요.');
+            var c= prompt('초를 입력해주세요.');
+            var d= prompt('필요한 시간을 초 단위로 입력해주세요.');
+            
+            if(a>=0 && a<=23){
+                if(b>=0 && b<=59){
+                    if(c>=0 && c<=59){
+                        if(d>=0 && d<=500000){
+                            function time(){
+                          var x = Math.floor(d/3600);
+                          var y = Math.floor(d%3600);
+                          var z = Math.floor(y/60);
+                          var s = Math.floor(d%60);
+
+                        var H = parseInt(a)+parseInt(x);
+                        var M = parseInt(b)+parseInt(z);
+                        var S = parseInt(c)+parseInt(s);
+                                
+                                if(S >= 60){
+                                    M=M+1;
+                                    S=S-60;
+                                }
+                                if(M>=60){
+                                    H=H+1;
+                                    M=M-60;
+                                }
+                                if(H>=24){
+                                    H=H-24;
+                                    
+                                }
+
+
+
+                          return  document.write(H+' '+M+' '+S);
+                            }
+                            time();
+                        }else { document.write('필요한 시간은 0초부터 500,000초까지 입력가능합니다.')}
+
+                    } else { document.write('초는 0초부터 59초까지 입니다.')}
+                } else { document.write('분은 0분부터 59분까지 입니다.')}
+            } else { document.write('시간은 0시간부터 23시간까지 입니다.')}
+            
+         
+            
+           
+
+        </script>
+
+         
+
+    </body>
+</html>
