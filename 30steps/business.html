@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var n = prompt('원가를 입력해주세요.');
+            var m = prompt('정가를 입력해주세요.');
+            var p = prompt('위조지폐금액을 입력해주세요.');
+            var c = prompt('거스름돈을 입력해주세요.');
+
+            if(n,m,p,c>=0 && n,m,p,c<=500000){
+                if(n < m){
+            var g = parseInt(m)+parseInt(c);
+            var r = parseInt(g)-parseInt(p);
+            var b = parseInt(r)-parseInt(c);
+            var l = parseInt(n)-parseInt(b);
+
+                    document.write(l);
+                }
+                else {alert('원가보다 정가가 커야합니다.')}
+
+            } else{ alert('금액은 0원에서 500,000원 사이 입니다.')}
+         
+           
+
+        </script>
+
+         
+
+    </body>
+</html>

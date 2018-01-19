@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var c = prompt('컴퓨터의 개수를 입력해주세요.');
+            var p = prompt('프린터의 개수를 입력해주세요.');
+            var r = prompt('라우터의 개수를 입력해주세요.');
+
+            if(c,p,r <= 100){
+             var a1 = 2.5*parseInt(c);
+             var a2 = 2*parseInt(p);
+             var a3 = 0.5*parseInt(r);
+
+                var a = 2*(a1+a2+a3);
+                var x = Math.ceil(a/10)*10;
+                
+                document.write(x);
+                
+
+            } else { alert("최대 개수는 100개입니다.")}
+
+           
+
+        </script>
+
+         
+
+    </body>
+</html>
