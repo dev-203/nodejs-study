@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var r = prompt('반지름 실수를 입력해주세요.');
+            var n = prompt('n각형 정수 n을 입력해주세요.');
+             r = parseFloat(r);
+             n = parseInt(n);
+           
+            
+            if(r>0 && r<20000){
+                if(n>2 && n<20000){
+                    function poly(){
+                    t = (Math.PI/180)*360/n;
+                    s = 1/2*r*r*Math.sin(t);
+                    S = n*s;
+                    S = S.toFixed(3)
+                        document.write(S);
+                        
+                    }
+                    
+                }
+                }
+                
+              poly();
+            
+
+           
+
+        </script>
+
+         
+
+    </body>
+</html>

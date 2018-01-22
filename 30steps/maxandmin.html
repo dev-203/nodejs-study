@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var x = prompt('첫번 째 정수를 입력해주세요.');
+            var y = prompt('두번 째 정수를 입력해주세요.');
+            
+
+            if(x,y < Math.pow(2,31)){
+
+               function max(x,y){
+                   if(x>y){
+                    return x;
+                   } else {
+                    return  y;
+                   }
+
+               }
+               function min(x,y){
+                   if(x>y){
+                    return  y;
+                   } else {
+                    return  x;
+                   }
+               }
+               
+               document.write(max(min(x,y),x));
+               
+                
+              
+            }
+
+            
+
+           
+
+        </script>
+
+         
+
+    </body>
+</html>
