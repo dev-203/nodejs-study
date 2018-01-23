@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var a = prompt('자연수 a를 입력해주세요.');
+            var b = prompt('자연수 b을 입력해주세요.');
+            var pi = 3.14159;
+            a = parseFloat(a);
+            b = parseFloat(b);
+            
+            if(a,b >= 1 && a,b <=200){
+               
+                    function x_length(){
+                        
+                        A=pi*a;
+                        B=pi*b;
+                        c=Math.sqrt(2*Math.pow(a,2));
+                        d=Math.sqrt(2*Math.pow(b,2));
+
+                        x = A+B+c+d;
+                        x = x.toFixed(3);
+
+                        document.write(x);
+                    }
+                    
+                
+                }
+                
+              x_length();
+            
+
+           
+
+        </script>
+
+         
+
+    </body>
+</html>

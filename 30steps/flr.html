@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var a = prompt('값을 입력해주세요.');
+            
+           
+            a=parseFloat(a);
+            
+            
+            
+                function flr(a){
+                    var count = 1;
+                    for(var n=1;n<32;n++){
+                for(var i=1;i<=a;i++){    
+                    if(i == Math.pow(2,n)) {count++ 
+                        break;}
+                }
+                
+            }
+            document.write(count);
+                
+            }
+            
+           flr(a);
+            
+              
+            
+
+           
+
+        </script>
+
+         
+
+    </body>
+</html>
