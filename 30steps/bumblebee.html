@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var a = prompt('기차a의 속도를 입력해주세요.');
+            var b = prompt('기차b의 속도를 입력해주세요.');
+            var x = prompt('여왕벌의 속도를 입력해주세요.');
+            var l = prompt('두 기차 사이의 거리를 입력해주세요.');
+            
+            a=parseFloat(a);
+            b=parseFloat(b);
+            x=parseFloat(x);
+            l=parseFloat(l);
+
+            var t = l/(a+b);
+
+            var X = x*t;
+
+            X = X.toFixed(6);
+
+            document.write(X);
+            
+           
+
+        </script>
+
+         
+
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var a = prompt('가로를 입력하세요.');
+            var b = prompt('세로를 입력하세요.');
+            
+            a=parseFloat(a);
+            b=parseFloat(b);
+           
+            
+            
+            var c=a*b/64;
+            c=Math.floor(c/10)*10;
+            var d = (a*b-64*c)/32;
+            
+            document.write('The number of whole tiles is '+c+' part tiles is '+d);
+            
+            
+            
+            
+        </script>
+
+         
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var n = prompt('변기의 갯수를 입력하세요.');
+            
+            n=parseFloat(n);
+            
+            var k = n/2;
+            var j = n/3;
+
+            function maxmin(){
+            var M = Math.ceil(k);
+            var m = Math.ceil(j);
+                if(j%3==0){
+                    m = m+1;
+                }
+
+                document.write(M+' ');
+                document.write(m);
+            }
+
+            
+            maxmin();
+
+
+            
+            
+
+            
+            
+           
+
+        </script>
+
+         
+
+    </body>
+</html>
