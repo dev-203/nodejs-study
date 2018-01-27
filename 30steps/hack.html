@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            
+
+        var r = prompt('홍보를 하지 않을 경우의 수입을 입력하세요.');
+        var e = prompt('홍보를 할 경우의 수입을 입력하세요.');
+        var c = prompt('홍보 비용을 입력하세요.');
+                
+        r=parseFloat(r);
+        e=parseFloat(e);
+        c=parseFloat(c);
+            
+        function hack(){
+            if(r>e){
+                document.write('do not advertise')
+            } else if(r<e){
+                document.write('advertise')
+            } else if(r==e){
+                document.write('does not matter')
+            }
+        }
+            
+            hack();
+        </script>
+
+         
+
+    </body>
+</html>

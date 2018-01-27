@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            
+
+        var h = prompt('시간을 입력하세요.');
+        var m = prompt('분을 입력하세요.');
+        
+                
+        h=parseFloat(h);
+        m=parseFloat(m);
+        
+            
+        function spa(){
+            if(m<=45){
+                
+                h=h-1;
+                m=60-45+m;
+            } else {
+                m = m-45;
+            }
+            if(h<0){
+                h=23;
+            } 
+            
+            return document.write(h+' '+m)
+        }
+            
+            spa();
+        </script>
+
+         
+
+    </body>
+</html>

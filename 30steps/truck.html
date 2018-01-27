@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            
+
+        var a = prompt('지하차도의 높이를 입력하세요.');
+        var b = prompt('지하차도의 높이를 입력하세요.');
+        var c = prompt('지하차도의 높이를 입력하세요.');
+                
+        a=parseFloat(a);
+        b=parseFloat(b);
+        c=parseFloat(c);
+            
+        function truck(){
+            if(a<=168){
+                document.write('CRASH '+a)
+            } else if(b<=168){
+                document.write('CRASH '+b)
+            } else if(c<=168){
+                document.write('CRASH '+c)
+            } else {
+                document.write('NO CRASH')
+            }
+        }
+            
+            truck();
+        </script>
+
+         
+
+    </body>
+</html>
