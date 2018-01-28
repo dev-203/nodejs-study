@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            
+
+        var y = prompt('연도를 입력하세요.');
+        var m = prompt('월을 입력하세요.');
+        var d = prompt('일을 입력하세요.');
+        
+                
+        y=parseFloat(y);
+        m=parseFloat(m);
+        d=parseFloat(d);
+        
+            
+        function saju(){
+            if((y+m+d)%10 == 0){
+             return   document.write('운수대통!')
+        } else {
+          return  documcument.write('노력하세요!');}
+        }
+
+        saju();
+
+        </script>
+
+         
+
+    </body>
+</html>

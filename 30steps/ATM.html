@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            
+
+        var n = prompt('인출 할 금액을 입력하세요.');
+        var m = prompt('최초 계좌의 금액(소수 이하 두 자리수를 가짐)을 입력하세요.');
+     
+                
+        n=parseFloat(n);
+        m=parseFloat(m);
+            
+            
+        function atm(){
+            if(n%5 == 0 && m>n){
+            m = m - n -0.5;
+            }
+            m=m.toFixed(2);
+            document.write(m)
+        }
+
+        atm();
+
+        </script>
+
+         
+
+    </body>
+</html>

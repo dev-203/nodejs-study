@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            
+
+        var n = prompt('자연수를 입력하세요.');
+        var m = prompt('자연수를 입력하세요.');
+     
+                
+        n=parseFloat(n);
+        m=parseFloat(m);
+            
+            
+        function evenodd(){
+            if(n%2 == 0 && m%2 == 0){
+                document.write('even+even=even<br>even*even=even');
+            } else if(n%2 == 0 && m%2 != 0){
+                document.write('even+odd=odd<br>even*odd=even');
+            } else if(n%2 != 0 && m%2 == 0){
+                document.write('odd+even=odd<br>odd*even=even');
+            } else if(n%2 !=0 && m%2 !=0){
+                document.write('odd+odd=even<br>odd*odd=odd');
+            }
+
+        }
+
+        
+
+        evenodd();
+
+        </script>
+
+         
+
+    </body>
+</html>
