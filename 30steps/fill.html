@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            
+
+        var n = prompt('스피드를 입력하세요.');
+        var m = prompt('몸무게를 입력하세요.');
+        var o = prompt('힘을 입력해주세요')
+                
+        n=parseFloat(n);
+        m=parseFloat(m);
+        o=parseFloat(o);
+            
+            
+        function fill(){
+            if(n<=4.5 && m>=150 && o>=200){
+                document.write('Wide Receiver')
+            } 
+            if(n<=6.0 && m>=300 && o>=500){
+                document.write('Lineman ')
+            } 
+            if(n<=5.0 && m>=200 && o>=300){
+                document.write('Quaterback ')
+            } else {document.write('No positions ')}
+
+        }
+        fill();
+        
+
+       
+
+        </script>
+
+         
+
+    </body>
+</html>

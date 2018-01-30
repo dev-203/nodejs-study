@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            
+
+        var n = prompt('자연수를 입력하세요.');
+        var m = prompt('자연수를 입력하세요.');
+        var o = prompt('자연수를 입력하세요.');
+     
+                
+        n=parseFloat(n);
+        m=parseFloat(m);
+        o=parseFloat(o);
+            
+        function med(){
+            if(n>m && m>o){
+                document.write(m)
+            }
+            if(n>o && o>m){
+                document.write(o)
+            }
+            if(m>n && n>o){
+                document.write(n)
+            }
+            if(m>o && o>n){
+                document.write(o)
+            }
+            if(o>n && n>m){
+                document.write(n)
+            }
+            if(o>m && m>n){
+                document.write(m)
+            }
+            if(n==m && m==o){
+                document.write(n)
+            }
+            if(n>m && m == o){
+                document.write(o)
+            }
+            if(m>n && n == o){
+                document.write(n)
+            }
+            if(o>n && n == m){
+               document.write(m)
+            }
+        }
+
+        med();
+       
+
+        
+
+        
+
+        </script>
+
+         
+
+    </body>
+</html>
